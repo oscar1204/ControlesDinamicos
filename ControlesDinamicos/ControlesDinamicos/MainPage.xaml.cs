@@ -11,7 +11,18 @@ namespace ControlesDinamicos
 	{
 		public MainPage()
 		{
-			InitializeComponent();
+			
 		}
+        public void Button1_Clicket(object sender, EventArgs e)
+        {
+            panel.Children.Add(new Button()
+            {
+                Text = $"Button{panel.Children.Count + 1}"
+
+            });
+            
+
+           
+        } 
 	}
 }
